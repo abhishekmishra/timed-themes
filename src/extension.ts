@@ -19,6 +19,10 @@ export function activate(context: vscode.ExtensionContext) {
 
         // Display a message box to the user
         vscode.window.showInformationMessage('Hello World!');
+        vscode.window.showInformationMessage(vscode.workspace.getConfiguration().get("workbench.colorTheme") + '');
+        vscode.workspace.getConfiguration().update("workbench.colorTheme", "Monokai", true).then(() => {
+            vscode.window.showInformationMessage(vscode.workspace.getConfiguration().get("workbench.colorTheme") + '');
+        });
     });
 
     context.subscriptions.push(disposable);
