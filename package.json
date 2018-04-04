@@ -2,7 +2,7 @@
     "name": "timed-themes",
     "displayName": "timed-themes",
     "description": "Use different themes at different times of the day.",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "abhishekmishra3",
     "engines": {
         "vscode": "^1.21.0"
@@ -19,7 +19,7 @@
         "type": "git",
         "url": "https://github.com/abhishekmishra/timed-themes.git"
     },
-    "homepage": "https://github.com/abhishekmishra/timed-themes/blob/master/README.md",    
+    "homepage": "https://github.com/abhishekmishra/timed-themes/blob/master/README.md",
     "activationEvents": [
         "*"
     ],
