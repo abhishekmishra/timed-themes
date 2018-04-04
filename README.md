@@ -32,6 +32,6 @@ This extension contributes the following settings:
 
 ## Release Notes
 
-### 0.1.0
+### 0.2.0
 
 Initial release
