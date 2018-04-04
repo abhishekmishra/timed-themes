@@ -10,6 +10,16 @@
     "categories": [
         "Other"
     ],
+    "license": "SEE LICENSE IN LICENSE",
+    "bugs": {
+        "url": "https://github.com/abhishekmishra/timed-themes/issues",
+        "email": "abhishekmishra3@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/abhishekmishra/timed-themes.git"
+    },
+    "homepage": "https://github.com/abhishekmishra/timed-themes/blob/master/README.md",    
     "activationEvents": [
         "*"
     ],
