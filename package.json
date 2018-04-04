@@ -11,16 +11,60 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "*"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+                "command": "timed-themes.switch-theme",
+                "title": "Switch to scheduled theme",
+                "category": "Timed Themes"
             }
-        ]
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "timed-themes configuration",
+            "properties": {
+                "timed-themes.dark": {
+                    "type": "string",
+                    "default": "Solarized Dark",
+                    "description": "Your dark theme."
+                },
+                "timed-themes.light": {
+                    "type": "string",
+                    "default": "Solarized Light",
+                    "description": "Your light theme."
+                },
+                "timed-themes.enabled": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Enable timed-themes."
+                },
+                "timed-themes.times": {
+                    "type": "object",
+                    "default": {
+                        "dark": [
+                            [
+                                800,
+                                1800
+                            ]
+                        ],
+                        "light": [
+                            [
+                                0,
+                                800
+                            ],
+                            [
+                                1800,
+                                2359
+                            ]
+                        ]
+                    },
+                    "description": "Times to switch the themes."
+                }
+            }
+        }
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
