@@ -18,11 +18,11 @@ This extension contributes the following settings:
 * `timed-themes.enabled`: enable/disable this extension
 * `timed-themes.light`: set your light theme
 * `timed-themes.dark`: set your dark theme
-* `timed-themes.times`: set the times for your light and dark themes. For example the following:
+* `timed-themes.times`: set the times for your light and dark themes (this has to be in the settings editor). For example the following is the default - light theme from 8am to 6pm, and dark for the rest of the time. Adjust according to your schedule.:
 ```
 {
-    "dark": [ [800, 1800 ] ],
-    "light": [ [ 0, 800 ], [ 1800, 2359 ] ]
+    "light": [ [800, 1800 ] ],
+    "dark": [ [ 0, 800 ], [ 1800, 2359 ] ]
 }
 ```
 
@@ -31,6 +31,12 @@ This extension contributes the following settings:
 
 
 ## Release Notes
+
+### 0.3.0
+* Fixed default times for dark and light themes (swapped).
+* Fixed info message to show current theme.
+* Changed display name for the extension.
+* Upgraded packages.
 
 ### 0.2.0
 

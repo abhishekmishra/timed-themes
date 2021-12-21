@@ -58,7 +58,7 @@ class TimedThemes {
 
     setTheme(name: string) {
         vscode.workspace.getConfiguration().update("workbench.colorTheme", name, true).then(() => {
-            vscode.window.showInformationMessage('Changed theme to ' + vscode.workspace.getConfiguration().get("workbench.colorTheme"));
+            vscode.window.showInformationMessage('Changed theme to ' + name);
         });
     }
 
